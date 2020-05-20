@@ -3,3 +3,109 @@
 @import "fonts";
 
 // start header
+.header__top {
+  background-color: #eef1f3;
+}
+.header__top-inner {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+.header__logo {
+  margin-left: 7px;
+}
+.header__box {
+  display: flex;
+}
+.header-seller {
+  margin-left: auto;
+  padding: 6px 14px;
+  background-color: $btn;
+  border-radius: 18px;
+  color: #fff;
+  margin-right: 50px;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.user__inner {
+  display: flex;
+}
+.user__images {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cower;
+  margin-right: 23px;
+  margin-left: 48px;
+}
+.user__name {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333333;
+  line-height: 22px;
+}
+.user__money {
+  color: $btn;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 300;
+}
+.header__menu-inner {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+  .form {
+    max-width: 360px;
+    position: relative;
+  }
+  input {
+    display: block;
+    outline: none;
+    width: 100%;
+    border-radius: 19px;
+    height: 46px;
+    border: 1px solid #d9dfe5;
+    padding-left: 25px;
+    padding-right: 80px;
+    &::placeholder {
+      color: #898f96;
+      font-weight: 300;
+      font-size: 15px;
+      line-height: 30px;
+    }
+  }
+  button {
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    background-color: $btn;
+    border-radius: 19px;
+    height: 46px;
+    width: 70px;
+    top: 0;
+    right: 0;
+  }
+}
+.menu {
+  display: flex;
+  align-items: center;
+}
+.menu__list {
+  li {
+    display: inline-block;
+    & + li {
+      margin-left: 33px;
+    }
+  }
+  a {
+    font-size: 15px;
+    line-height: 42px;
+    font-weight: 500;
+    color: #333333;
+    text-transform: uppercase;
+  }
+}
