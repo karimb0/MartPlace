@@ -43,3 +43,21 @@ body {
   line-height: 30px;
   font-weight: 300;
 }
+.category__title {
+  color: #7347c1;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 30px;
+  padding-left: 26px;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/icons/wp.png);
+    width: 16px;
+    height: 16px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

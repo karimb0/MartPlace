@@ -328,3 +328,191 @@
   }
 }
 // end product
+// start products-slider
+
+.products-slider {
+  background-color: #eff1f5;
+  padding: 120px 0;
+  .slider__title {
+    padding: 43px 200px 43px 30px;
+    font-weight: 300;
+    font-size: 30px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    color: #000;
+    margin-bottom: 50px;
+  }
+}
+.product__items {
+  display: flex;
+  border-radius: 4px;
+  box-shadow: 0px 2px 30px 0px rgba(147, 155, 168, 0.1);
+  background-color: #fff;
+  font-weight: 300;
+  .img-box {
+    display: inline-block;
+    position: relative;
+    &:hover .box-link {
+      height: 100%;
+    }
+    .box-link {
+      background-image: linear-gradient(
+        to left,
+        rgb(6, 116, 236) 0%,
+        rgb(61, 94, 215) 46%,
+        rgb(115, 71, 193) 100%
+      );
+      opacity: 0.9;
+      height: 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      overflow: hidden;
+      transition: all 0.5s;
+      a {
+        margin: 0 5px;
+        padding: 10px 30px;
+        border: 1px solid #f4f4f4;
+        font-weight: 500;
+        color: #fff;
+        border-radius: 22px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+        transition: all 0.5s;
+        &:hover {
+          background-color: #fff;
+          color: $btn;
+        }
+      }
+    }
+  }
+  img {
+    min-width: 555px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cower;
+    display: block;
+  }
+}
+.product__item {
+  margin: 50px 50px 0;
+  &-title {
+    font-size: 24px;
+    color: #000;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  &-user {
+    display: flex;
+    line-height: 30px;
+    font-weight: 300;
+    margin-bottom: 30px;
+    a {
+      color: #000;
+      margin-right: 20px;
+      display: flex;
+      max-width: 300px;
+      align-items: center;
+      .avatar {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cower;
+        display: inline-block;
+      }
+    }
+  }
+  &-tags {
+    display: flex;
+    color: #868c96;
+    line-height: 30px;
+    .product__item-tag {
+      background-color: #f1f3f6;
+      border-radius: 14px;
+      padding: 0 15px;
+      margin-right: 7px;
+      margin-top: 30px;
+    }
+  }
+  &-bottom {
+    margin-top: 41px;
+    min-height: 80px;
+    border-top: 1px solid #ececec;
+    display: flex;
+    align-items: center;
+    .bottom-price {
+      background-color: $btn;
+      color: #fff;
+      line-height: 30px;
+      padding: 0 20px;
+      border-radius: 14px;
+      font-weight: 500;
+      margin-right: 20px;
+    }
+    .bottom-like {
+      padding-left: 25px;
+      line-height: 30px;
+      margin-right: 20px;
+      position: relative;
+      &:after {
+        content: "\e813";
+        position: absolute;
+        font-size: 15px;
+        left: 0;
+        font-family: "Linearicons-Free";
+        top: 50%;
+        transform: translateY(-50%);
+        color: #7347c1;
+      }
+    }
+    .bottom-cart {
+      padding-left: 25px;
+      line-height: 30px;
+      position: relative;
+      color: $btn;
+      &:after {
+        content: "\e82e";
+        position: absolute;
+        font-size: 15px;
+        left: 0;
+        font-family: "Linearicons-Free";
+        top: 50%;
+        transform: translateY(-50%);
+        color: $btn;
+      }
+    }
+    .bottom-stars {
+      margin-left: auto;
+    }
+  }
+}
+.slick-arrow {
+  border: none;
+  outline: none;
+  position: absolute;
+  top: -105px;
+  z-index: 1;
+  cursor: pointer;
+  transform: translateY(-50%);
+  font-size: 0;
+  background-color: #7347c1;
+  font-family: "Linearicons-Free";
+  font-size: 14px;
+  color: #fff;
+  padding: 15px 20px;
+}
+.slick-next {
+  right: 30px;
+  border-radius: 0 22px 22px 0;
+}
+.slick-prev {
+  right: 84px;
+  border-radius: 22px 0 0 22px;
+}
+// end products-slider
